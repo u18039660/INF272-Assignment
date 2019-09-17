@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "CompanyLogin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center">JOB TINDER</h2>
+<h2>Company Login</h2>
+
+<div style="border:solid" align="center">
+    <h2>Company Login</h2>
+
+    <p>Company ID:<input type="text" name="ID" /></p>
+    <p>Company Password:<input type="text" name="ID" /></p>
+
+    @Html.ActionLink("New user? Register now", "CompanyRegistration")<input type="submit" name="Login" value="Login" onclick="location.href='@Url.Action("CompanyProfile","Company")'" />
+    <input type="button" name="Home" value="Home" onclick="location.href='@Url.Action("Homepage","Company")'" />
+</div>
