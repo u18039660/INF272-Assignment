@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "JobSeekerRegistration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center">JOB TINDER</h2>
+<h2>Job Seeker Registration</h2>
+
+<div style="border:solid" align="center">
+    <h1>Job Seeker Registration</h1>
+    @using (Html.BeginForm("JobSeekerRegistration", "JobSeeker"))
+    {
+        <h3>Personal Information:</h3>
+
+            <label for="id">User ID: </label>
+            <input type="text" name="id" /><br />
+
+            <label for="name">User Name: </label>
+            <input type="text" name="name" /><br />
+
+            <label for="surname">User Surname: </label>
+            <input type="text" name="surname" /><br />
+
+            <label for="address">User Address: </label>
+            <input type="text" name="address" /><br />
+
+            <label for="email">User Email: </label>
+            <input type="text" name="email" /><br />
+
+            <label for="tel">User Tel: </label>
+            <input type="text" name="tel" /><br />
+
+            <label for="relocate">Willing to Relocate: </label>
+            <input type="checkbox" name="relocate" /><br /><br />
+
+            <h3>Qualifications:</h3>
+            <label for="field">Career Field: </label>
+            <input type="text" name="field" /><br />
+
+            <label for="specialisation">Specialisation: </label>
+            <input type="text" name="specialisation" /><br />
+
+            <label for="experience">Years of Experience: </label>
+            <select name="experience">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10+</option>
+
+            </select><br />
+
+            <label for="education">Education: </label>
+            <select name="education">
+                <option>General Education Certificate (Grade 9)</option>
+                <option>National Senior Certificate (Matric)</option>
+                <option>Higher Certificate</option>
+                <option>Diploma</option>
+                <option>Bachelor's Degree</option>
+                <option>Honours Degree</option>
+                <option>Master's Degree</option>
+                <option>Doctor's Degree</option>
+
+            </select><br />
+
+            <label for="skills">Additional Skills (listed & separated by a comma): </label>
+            <textarea name="skills" rows="2" cols="20"></textarea><br /><br />
+
+            <label for="password">Password: </label>
+            <input type="text" name="password" /><br />
+
+            <label for="confPassword">Confirm Password: </label>
+            <input type="text" name="confPassword" /><br />
+
+
+
+            @Html.ActionLink("Submit", "JobSeekerProfile")
+    }
+
+    @Html.ActionLink("Cancel", "JobSeekerLogin")
+
+</div>

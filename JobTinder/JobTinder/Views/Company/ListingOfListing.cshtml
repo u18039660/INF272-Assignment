@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "ListingOfListing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center">JOB TINDER</h2>
+<h2>Listing Of Listing</h2>
+
+<table class="table">
+    <tr >
+        <th>Carrer field</th>
+        <th>Job Position</th>
+        <th>Location</th>
+        
+    </tr>
+@*@foreach (var item in Model)*@
+
+    <tr >
+        <td>Information Technology</td>
+        <td>Senior Developer</td>
+        <td>Sandton</td>
+    </tr>
+
+    
+</table>
+<input id="Submit" type="submit" value="Logout" onclick="location.href='@Url.Action("Homepage","Company")'" />
+<input id="Submit" type="submit" value="Edit" onclick="location.href='@Url.Action("CompanyListing","Company")'" />
+<input id="Submit" type="submit" value="Delete" onclick="location.href='@Url.Action("Homepage","Company")'" /> @*Deletes the row*@

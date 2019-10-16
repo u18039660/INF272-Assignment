@@ -10,7 +10,7 @@ namespace JobTinder.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Company/Homepage.cshtml");
         }
 
         public ActionResult About()

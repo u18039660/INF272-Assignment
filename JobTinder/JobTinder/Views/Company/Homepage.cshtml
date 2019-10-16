@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Homepage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Homepage</h2>
+
+<div style="border:solid" align="center">
+    <h2>JOB TINDER</h2>
+
+    <!--<input type="button" name="Home" value="Home" onclick="location.href='@Url.Action("Homepage","Company")'" />-->
+    <input type="button" name="Companies" value="Companies" onclick="location.href='@Url.Action("CompanyLogin","Company")'" />
+    <input type="button" name="JobSeeker" value="Job Seeker" onclick="location.href='@Url.Action("JobSeekerLogin","JobSeeker")'" /><br />
+
+    <h1 style="text-align:center">Make moves...</h1>
+    <h4 style="text-align:center">the future is on your fingertips with Job Tinder!</h4><br /><br />
+</div>
+    <h3>Creaters of the website are:</h3>
+    <div class="row" align="center" text-align="center">
+        
+        <div class="col-md-2" align="center" >
+            <p text-align="center">Natile Forbes in Information and Knowledge Systems</p><br />
+        </div>
+        <div class="col-md-2" align="center" >
+            <p text-align="center">Karim Portia in Information Systems</p><br />
+        </div>
+        <div class="col-md-2" align="center" >
+            <p text-align="center">Polaki Mamphekuli in Information Systems</p><br />
+        </div>
+    </div>

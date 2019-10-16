@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "JobSeekerProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center">JOB TINDER</h2>
+<h2>Job Seeker Profile</h2>
+
+<div style="border:solid" align="center">
+    <h2>Personal Details</h2>
+    <label>Name: Steve</label><br /><br />
+    <label>Surnameame: Jobs</label><br /><br />
+    <label>Physical Address: 1203 City Street, Sandton, 0100</label><br /><br />
+    <label>Email: jobs@gmail.com</label><br /><br />
+    <label>Cell Number: 061 452 2015</label><br /><br />
+    
+    <h2>Qualifications</h2>
+    <label>Career Field: IT</label><br />
+    <label>Specialization: SQL</label><br />
+    <label>Years of Experience: 5</label><br />
+    <label>Education: Honours Degree in IT</label><br />
+    <label>Additional Skill: HTML</label><br />
+    <input id="Submit1" type="submit" value="Edit" onclick="location.href='@Url.Action("JobSeekerRegistration", "JobSeeker")'" />
+    <input id="Submit1" type="submit" value="Seek Job" onclick="location.href='@Url.Action("JobSeekerMatches","JobSeeker")'" />
+
+
+</div>

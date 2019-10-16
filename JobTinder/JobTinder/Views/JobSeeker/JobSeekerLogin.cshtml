@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "JobSeekerLogin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">JOB TINDER</h2>
+<h2>Job Seeker Login</h2>
+<div style="border:solid" align="center">
+    <h2>JobSeekerLogin</h2>
+
+    <p>User ID:<input type="text" name="ID" /></p>
+    <p>Password:<input type="text" name="ID" /></p>
+
+    @Html.ActionLink("New user? Register now", "JobSeekerRegistration")<input type="submit" name="Login" value="Login" onclick="location.href='@Url.Action("JobSeekerProfile","JobSeeker")'" />
+    <input type="button" name="Home" value="Home" onclick="location.href='@Url.Action("Homepage","Company")'" />
+</div>

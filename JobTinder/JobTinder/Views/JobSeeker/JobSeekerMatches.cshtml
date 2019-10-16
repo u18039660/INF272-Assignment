@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "JobSeekerMatches";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">JOB TINDER</h2>
+<div>
+    <h1>Your Job Matches</h1>
+
+    @*@using (Html.BeginForm("JobDetails", "JobSeeker", FormMethod.Post))*@
+    
+        <table style="width:auto; border:5px solid black;">
+            <tr>
+                <td style="border:2px solid black; font-weight:bold;">Position</td>
+                <td style="border:2px solid black; font-weight:bold;">Company</td>
+                <td style="border:2px solid black; font-weight:bold;">Details</td>
+            </tr>
+            <!--ViewBag.tableContents will replace the example rows when data can be pulled from the database-->
+            <tr>
+                <td style="border:2px solid black;">example</td>
+                <td style="border:2px solid black;">example</td>
+                <td>@Html.ActionLink("View", "ListingOfListing","Company")</td>
+            </tr>
+        </table>
+    
+
+    @Html.ActionLink("OK", "JobSeekerProfile")
+</div>
